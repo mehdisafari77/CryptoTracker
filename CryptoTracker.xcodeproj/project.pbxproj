@@ -12,6 +12,7 @@
 		B55F8D3727DC73AA002F4E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F8D3627DC73AA002F4E32 /* Assets.xcassets */; };
 		B55F8D3A27DC73AA002F4E32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F8D3927DC73AA002F4E32 /* Preview Assets.xcassets */; };
 		B55F8D4227DDB067002F4E32 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D4127DDB067002F4E32 /* Color.swift */; };
+		B55F8D4827DDB21A002F4E32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D4727DDB21A002F4E32 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B55F8D3627DC73AA002F4E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55F8D3927DC73AA002F4E32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B55F8D4127DDB067002F4E32 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B55F8D4727DDB21A002F4E32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				B55F8D4027DDB05F002F4E32 /* Extensions */,
+				B55F8D4327DDB1E9002F4E32 /* Core */,
 				B55F8D3227DC73A9002F4E32 /* CryptoTrackerApp.swift */,
 				B55F8D3427DC73A9002F4E32 /* ContentView.swift */,
 				B55F8D3627DC73AA002F4E32 /* Assets.xcassets */,
@@ -76,6 +79,38 @@
 				B55F8D4127DDB067002F4E32 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B55F8D4327DDB1E9002F4E32 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B55F8D4427DDB1F8002F4E32 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B55F8D4427DDB1F8002F4E32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B55F8D4627DDB20A002F4E32 /* ViewModels */,
+				B55F8D4527DDB206002F4E32 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B55F8D4527DDB206002F4E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B55F8D4727DDB21A002F4E32 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B55F8D4627DDB20A002F4E32 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55F8D3527DC73A9002F4E32 /* ContentView.swift in Sources */,
+				B55F8D4827DDB21A002F4E32 /* HomeView.swift in Sources */,
 				B55F8D3327DC73A9002F4E32 /* CryptoTrackerApp.swift in Sources */,
 				B55F8D4227DDB067002F4E32 /* Color.swift in Sources */,
 			);
