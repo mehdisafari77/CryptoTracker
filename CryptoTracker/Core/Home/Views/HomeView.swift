@@ -17,7 +17,7 @@ struct HomeView: View {
             Color.theme.background
                 .ignoresSafeArea()
             
-            // Content Layerr
+            // Content Layer
             VStack {
                 homeHeader
                 
