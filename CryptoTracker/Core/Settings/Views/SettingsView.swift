@@ -23,8 +23,6 @@ struct SettingsView: View {
                     .ignoresSafeArea()
                 // content
                 List {
-                    swiftfulThinkingSection
-                        .listRowBackground(Color.theme.background.opacity(0.5))
                     coinGeckoSection
                         .listRowBackground(Color.theme.background.opacity(0.5))
                     developerSection
@@ -53,23 +51,23 @@ struct SettingsView_Previews: PreviewProvider {
 }
 extension SettingsView {
     
-    private var swiftfulThinkingSection: some View {
-        Section(header: Text("Swiftful Thinking")) {
-            VStack(alignment: .leading) {
-                Image("logo")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text("This app made by following a @SwiftfulThinking course on YouTube. It uses MVVM Architecture, Combine and CoreData!")
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.theme.accent)
-            }
-            .padding(.vertical)
-            Link("Subscribe on YouTube 🥳", destination: youtubeURL)
-            Link("Support for his coffee addiction ☕️", destination: coffeeURL)
-        }
-    }
+//    private var swiftfulThinkingSection: some View {
+//        Section(header: Text("Swiftful Thinking")) {
+//            VStack(alignment: .leading) {
+//                Image("logo")
+//                    .resizable()
+//                    .frame(width: 100, height: 100)
+//                    .clipShape(RoundedRectangle(cornerRadius: 20))
+//                Text("This app made by following a @SwiftfulThinking course on YouTube. It uses MVVM Architecture, Combine and CoreData!")
+//                    .font(.callout)
+//                    .fontWeight(.medium)
+//                    .foregroundColor(Color.theme.accent)
+//            }
+//            .padding(.vertical)
+//            Link("Subscribe on YouTube 🥳", destination: youtubeURL)
+//            Link("Support for his coffee addiction ☕️", destination: coffeeURL)
+//        }
+//    }
     
     private var coinGeckoSection: some View {
         Section(header: Text("Coin Gecko")) {
@@ -96,7 +94,7 @@ extension SettingsView {
                     .resizable()
                     .frame(width: 100, height: 100)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text("This app was developed by Sivaram Yadav. It uses SwiftUI and is written 100% in Swift. The project benifits from multi-threading, publishers/subscribers and data persistence.")
+                Text("This app was developed by Mehdi Safari. It uses SwiftUI and is written 100% in Swift. The project benifits from multi-threading, publishers/subscribers and data persistence.")
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(Color.theme.accent)
