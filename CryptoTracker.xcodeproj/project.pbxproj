@@ -36,6 +36,7 @@
 		B55F8D7C27E0430D002F4E32 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D7B27E0430D002F4E32 /* LaunchView.swift */; };
 		B55F8D7E27E0433B002F4E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55F8D7D27E0433B002F4E32 /* LaunchScreen.storyboard */; };
 		B55F8D8127E04398002F4E32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8027E04398002F4E32 /* SettingsView.swift */; };
+		B55F8D8627E04460002F4E32 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8527E04460002F4E32 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		B55F8D7B27E0430D002F4E32 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		B55F8D7D27E0433B002F4E32 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B55F8D8027E04398002F4E32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B55F8D8527E04460002F4E32 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 		B55F8D8327E0440D002F4E32 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B55F8D8527E04460002F4E32 /* NetworkManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55F8D8627E04460002F4E32 /* NetworkManager.swift in Sources */,
 				B55F8D3527DC73A9002F4E32 /* ContentView.swift in Sources */,
 				B55F8D5927E03B6E002F4E32 /* CoinRowView.swift in Sources */,
 				B55F8D5527E03AEC002F4E32 /* CoinDetailModel.swift in Sources */,
