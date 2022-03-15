@@ -31,6 +31,7 @@
 		B55F8D7027E0420D002F4E32 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D6F27E0420D002F4E32 /* CoinImageViewModel.swift */; };
 		B55F8D7227E04227002F4E32 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D7127E04227002F4E32 /* CoinLogoView.swift */; };
 		B55F8D7427E04248002F4E32 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D7327E04248002F4E32 /* SearchBarView.swift */; };
+		B55F8D7627E0427D002F4E32 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D7527E0427D002F4E32 /* StatisticView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		B55F8D6F27E0420D002F4E32 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		B55F8D7127E04227002F4E32 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		B55F8D7327E04248002F4E32 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		B55F8D7527E0427D002F4E32 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				B55F8D6C27E041E2002F4E32 /* CoinImage */,
 				B55F8D4A27DDB347002F4E32 /* CircleButton */,
 				B55F8D7327E04248002F4E32 /* SearchBarView.swift */,
+				B55F8D7527E0427D002F4E32 /* StatisticView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				B55F8D5B27E03BBF002F4E32 /* PortfolioView.swift in Sources */,
 				B55F8D4C27DDB358002F4E32 /* CircleButtonView.swift in Sources */,
 				B55F8D4227DDB067002F4E32 /* Color.swift in Sources */,
+				B55F8D7627E0427D002F4E32 /* StatisticView.swift in Sources */,
 				B55F8D4E27DDB6BC002F4E32 /* CircleButtonAnimationView.swift in Sources */,
 				B55F8D7027E0420D002F4E32 /* CoinImageViewModel.swift in Sources */,
 				B55F8D6B27E0419D002F4E32 /* PortfolioContainer.xcdatamodeld in Sources */,
