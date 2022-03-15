@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Detail loading view
 struct DetailLoadingView: View {
     
     @Binding var coin: CoinModel?
