@@ -46,6 +46,7 @@
 		B55F8D9427E04568002F4E32 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9327E04568002F4E32 /* String.swift */; };
 		B55F8D9627E04642002F4E32 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9527E04642002F4E32 /* CoinDataService.swift */; };
 		B55F8D9827E046BC002F4E32 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9727E046BC002F4E32 /* CoinDetailDataService.swift */; };
+		B55F8D9A27E04727002F4E32 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9927E04727002F4E32 /* CoinImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		B55F8D9327E04568002F4E32 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B55F8D9527E04642002F4E32 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		B55F8D9727E046BC002F4E32 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		B55F8D9927E04727002F4E32 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 			children = (
 				B55F8D9527E04642002F4E32 /* CoinDataService.swift */,
 				B55F8D9727E046BC002F4E32 /* CoinDetailDataService.swift */,
+				B55F8D9927E04727002F4E32 /* CoinImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				B55F8D3327DC73A9002F4E32 /* CryptoTrackerApp.swift in Sources */,
 				B55F8D5327E03A43002F4E32 /* CoinModel.swift in Sources */,
 				B55F8D9427E04568002F4E32 /* String.swift in Sources */,
+				B55F8D9A27E04727002F4E32 /* CoinImageService.swift in Sources */,
 				B55F8D6627E04158002F4E32 /* StatisticModel.swift in Sources */,
 				B55F8D7C27E0430D002F4E32 /* LaunchView.swift in Sources */,
 				B55F8D7827E042A1002F4E32 /* XMarkButton.swift in Sources */,
