@@ -7,6 +7,7 @@ This is a crypto tracking app using the CoinGecko to get data about coins, and u
 ## Built With
 * [SwiftUI](https://developer.apple.com/tutorials/swiftui)
 * [UIKit](https://developer.apple.com/documentation/uikit)
+* [CoinGeckAPI](https://www.coingecko.com/en/api)
 
 ## Gif of App
 ![Gif](./CryptoTracker/Assets.xcassets/gif.dataset/gif.gif)
