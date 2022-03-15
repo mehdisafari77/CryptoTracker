@@ -21,6 +21,7 @@ struct DetailLoadingView: View {
     }
 }
 
+// Detail view start
 struct DetailView: View {
     
     @StateObject private var vm: DetailViewModel
