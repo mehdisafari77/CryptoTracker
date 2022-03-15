@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct PortfolioView: View {
+    
+    @EnvironmentObject private var vm: HomeViewModel
+    @State private var selectedCoin: CoinModel?
+    @State private var quantityText: String = ""
+    @State private var showCheckmark: Bool  = false
+    
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
