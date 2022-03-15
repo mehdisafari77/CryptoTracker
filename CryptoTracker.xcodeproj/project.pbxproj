@@ -125,6 +125,8 @@
 		B55F8D4327DDB1E9002F4E32 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B55F8D7A27E042E6002F4E32 /* Settings */,
+				B55F8D7927E042E1002F4E32 /* Launch */,
 				B55F8D4927DDB331002F4E32 /* Components */,
 				B55F8D4427DDB1F8002F4E32 /* Home */,
 				B55F8D5C27E03D6A002F4E32 /* Detail */,
@@ -227,6 +229,20 @@
 				B55F8D7127E04227002F4E32 /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
+			sourceTree = "<group>";
+		};
+		B55F8D7927E042E1002F4E32 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		B55F8D7A27E042E6002F4E32 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
