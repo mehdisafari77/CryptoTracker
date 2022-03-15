@@ -17,7 +17,7 @@ struct HomeView: View {
     @State private var showDetailView: Bool = false
     
     var body: some View {
-        {
+        ZStack {
             // background layer
             Color.theme.background.ignoresSafeArea()
                 .sheet(isPresented: $showPortfolioView) {
@@ -55,6 +55,14 @@ struct HomeView: View {
                 SettingsView()
             })
         }
+        .background(
+            NavigationLink(
+                destination: DetailLoadingView(coin: $selectedCoin),
+                isActive: $showDetailView,
+                label: {
+                    EmptyView()
+                })
+        )
     }
 }
 
