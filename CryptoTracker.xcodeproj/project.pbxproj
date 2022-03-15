@@ -30,6 +30,7 @@
 		B55F8D6E27E041F0002F4E32 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D6D27E041F0002F4E32 /* CoinImageView.swift */; };
 		B55F8D7027E0420D002F4E32 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D6F27E0420D002F4E32 /* CoinImageViewModel.swift */; };
 		B55F8D7227E04227002F4E32 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D7127E04227002F4E32 /* CoinLogoView.swift */; };
+		B55F8D7427E04248002F4E32 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D7327E04248002F4E32 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		B55F8D6D27E041F0002F4E32 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		B55F8D6F27E0420D002F4E32 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		B55F8D7127E04227002F4E32 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		B55F8D7327E04248002F4E32 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				B55F8D6C27E041E2002F4E32 /* CoinImage */,
 				B55F8D4A27DDB347002F4E32 /* CircleButton */,
+				B55F8D7327E04248002F4E32 /* SearchBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				B55F8D7027E0420D002F4E32 /* CoinImageViewModel.swift in Sources */,
 				B55F8D6B27E0419D002F4E32 /* PortfolioContainer.xcdatamodeld in Sources */,
 				B55F8D6027E03D98002F4E32 /* DetailView.swift in Sources */,
+				B55F8D7427E04248002F4E32 /* SearchBarView.swift in Sources */,
 				B55F8D6427E03F94002F4E32 /* DetailViewModel.swift in Sources */,
 				B55F8D5727E03B4A002F4E32 /* HomeStatsView.swift in Sources */,
 				B55F8D7227E04227002F4E32 /* CoinLogoView.swift in Sources */,
