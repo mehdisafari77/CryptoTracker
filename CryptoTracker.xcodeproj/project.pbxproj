@@ -16,6 +16,7 @@
 		B55F8D4C27DDB358002F4E32 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D4B27DDB358002F4E32 /* CircleButtonView.swift */; };
 		B55F8D4E27DDB6BC002F4E32 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D4D27DDB6BC002F4E32 /* CircleButtonAnimationView.swift */; };
 		B55F8D5027E039E8002F4E32 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D4F27E039E8002F4E32 /* HomeViewModel.swift */; };
+		B55F8D5327E03A43002F4E32 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D5227E03A43002F4E32 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B55F8D4B27DDB358002F4E32 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		B55F8D4D27DDB6BC002F4E32 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		B55F8D4F27E039E8002F4E32 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B55F8D5227E03A43002F4E32 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		B55F8D3127DC73A9002F4E32 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B55F8D5127E03A39002F4E32 /* Models */,
 				B55F8D3227DC73A9002F4E32 /* CryptoTrackerApp.swift */,
 				B55F8D4027DDB05F002F4E32 /* Extensions */,
 				B55F8D4327DDB1E9002F4E32 /* Core */,
@@ -138,6 +141,14 @@
 			path = CircleButton;
 			sourceTree = "<group>";
 		};
+		B55F8D5127E03A39002F4E32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B55F8D5227E03A43002F4E32 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +223,7 @@
 				B55F8D4827DDB21A002F4E32 /* HomeView.swift in Sources */,
 				B55F8D5027E039E8002F4E32 /* HomeViewModel.swift in Sources */,
 				B55F8D3327DC73A9002F4E32 /* CryptoTrackerApp.swift in Sources */,
+				B55F8D5327E03A43002F4E32 /* CoinModel.swift in Sources */,
 				B55F8D4C27DDB358002F4E32 /* CircleButtonView.swift in Sources */,
 				B55F8D4227DDB067002F4E32 /* Color.swift in Sources */,
 				B55F8D4E27DDB6BC002F4E32 /* CircleButtonAnimationView.swift in Sources */,
