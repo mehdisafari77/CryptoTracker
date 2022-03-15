@@ -238,8 +238,7 @@
 		B55F8D7927E042E1002F4E32 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				B55F8D7B27E0430D002F4E32 /* LaunchView.swift */,
-				B55F8D7D27E0433B002F4E32 /* LaunchScreen.storyboard */,
+				B55F8D7F27E04371002F4E32 /* Views */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -249,6 +248,15 @@
 			children = (
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		B55F8D7F27E04371002F4E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B55F8D7B27E0430D002F4E32 /* LaunchView.swift */,
+				B55F8D7D27E0433B002F4E32 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
