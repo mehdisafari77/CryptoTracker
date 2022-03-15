@@ -42,6 +42,7 @@
 		B55F8D8C27E044CD002F4E32 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8B27E044CD002F4E32 /* PreviewProvider.swift */; };
 		B55F8D8E27E04507002F4E32 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8D27E04507002F4E32 /* Double.swift */; };
 		B55F8D9027E04520002F4E32 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8F27E04520002F4E32 /* UIApplication.swift */; };
+		B55F8D9227E0453A002F4E32 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9127E0453A002F4E32 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		B55F8D8B27E044CD002F4E32 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		B55F8D8D27E04507002F4E32 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		B55F8D8F27E04520002F4E32 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		B55F8D9127E0453A002F4E32 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				B55F8D8B27E044CD002F4E32 /* PreviewProvider.swift */,
 				B55F8D8D27E04507002F4E32 /* Double.swift */,
 				B55F8D8F27E04520002F4E32 /* UIApplication.swift */,
+				B55F8D9127E0453A002F4E32 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				B55F8D7827E042A1002F4E32 /* XMarkButton.swift in Sources */,
 				B55F8D5B27E03BBF002F4E32 /* PortfolioView.swift in Sources */,
 				B55F8D4C27DDB358002F4E32 /* CircleButtonView.swift in Sources */,
+				B55F8D9227E0453A002F4E32 /* Date.swift in Sources */,
 				B55F8D4227DDB067002F4E32 /* Color.swift in Sources */,
 				B55F8D7627E0427D002F4E32 /* StatisticView.swift in Sources */,
 				B55F8D4E27DDB6BC002F4E32 /* CircleButtonAnimationView.swift in Sources */,
