@@ -24,7 +24,6 @@ class DetailViewModel: ObservableObject {
         self.addSubscribers()
     }
     
-    
     private func addSubscribers() {
         coinDetailDataService.$coinDetails
             .combineLatest($coin)
@@ -45,5 +44,14 @@ class DetailViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
+    
+    private func mapDataToStats(coinDetailModel: CoinDetailModel?, coinModel: CoinModel) -> (overview: [StatisticModel], additional: [StatisticModel]) {
+        
+        let overviewArray   = createOverviewArray(coinModel: coinModel)
+        let additionalArray = createAdditionalArray(coinDetailModel: coinDetailModel, coinModel: coinModel)
+        
+        return (overviewArray, additionalArray)
+    }
+    
     
 }
