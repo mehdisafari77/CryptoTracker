@@ -43,6 +43,7 @@
 		B55F8D8E27E04507002F4E32 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8D27E04507002F4E32 /* Double.swift */; };
 		B55F8D9027E04520002F4E32 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8F27E04520002F4E32 /* UIApplication.swift */; };
 		B55F8D9227E0453A002F4E32 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9127E0453A002F4E32 /* Date.swift */; };
+		B55F8D9427E04568002F4E32 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9327E04568002F4E32 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		B55F8D8D27E04507002F4E32 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		B55F8D8F27E04520002F4E32 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		B55F8D9127E0453A002F4E32 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B55F8D9327E04568002F4E32 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				B55F8D8D27E04507002F4E32 /* Double.swift */,
 				B55F8D8F27E04520002F4E32 /* UIApplication.swift */,
 				B55F8D9127E0453A002F4E32 /* Date.swift */,
+				B55F8D9327E04568002F4E32 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				B55F8D5027E039E8002F4E32 /* HomeViewModel.swift in Sources */,
 				B55F8D3327DC73A9002F4E32 /* CryptoTrackerApp.swift in Sources */,
 				B55F8D5327E03A43002F4E32 /* CoinModel.swift in Sources */,
+				B55F8D9427E04568002F4E32 /* String.swift in Sources */,
 				B55F8D6627E04158002F4E32 /* StatisticModel.swift in Sources */,
 				B55F8D7C27E0430D002F4E32 /* LaunchView.swift in Sources */,
 				B55F8D7827E042A1002F4E32 /* XMarkButton.swift in Sources */,
