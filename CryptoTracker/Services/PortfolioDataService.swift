@@ -43,5 +43,16 @@ class PortfolioDataService {
         }
     }
     
+    // MARK: - PRIVATE
+    private func getPortfolio() {
+        let request = NSFetchRequest<PortfolioEntity>(entityName: entityName)
+        
+        do {
+            savedEntities = try container.viewContext.fetch(request)
+        } catch let error {
+            print("Error fetching Portfolio Entities from core data container: \(error.localizedDescription)")
+        }
+    }
+    
     
 }
