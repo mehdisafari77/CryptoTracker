@@ -16,7 +16,37 @@ struct PortfolioView: View {
     
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                VStack {
+                    SearchBarView(searchText: $vm.searchText)
+                    coinLogoList
+                    
+                    if selectedCoin != nil {
+                        portfolioInputSection
+                    }
+                }
+            }
+            .background(
+                Color.theme.background
+                    .ignoresSafeArea()
+            )
+            .navigationTitle("Edit Portfolio")
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    XMarkButton()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    trailingNavBarButton
+                }
+            })
+            //            .navigationBarItems(leading: XMarkButton()) // depricated, use like above tool bar
+            .onChange(of: vm.searchText, perform: { value in
+                if value == "" {
+                    removeSelectedCoin()
+                }
+            })
+        }
     }
 }
 
