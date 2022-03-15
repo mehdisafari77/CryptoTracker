@@ -10,10 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     
     let defaultURL      = URL(string: "https://www.google.com")!
-    let youtubeURL      = URL(string: "https://www.youtube/c/swiftfulthinking")!
-    let coffeeURL       = URL(string: "https://www.buymeacoffee.com/nicksarno")!
     let coingeckoURL    = URL(string: "https://www.coingecko.com")!
-    let personalURL     = URL(string: "https://www.nicksarno.com")!
+    let personalURL     = URL(string: "https://mehdisafari77.github.io/React-Portfolio/")!
 
     var body: some View {
         NavigationView {
