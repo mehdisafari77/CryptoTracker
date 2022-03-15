@@ -44,9 +44,7 @@ class PortfolioDataService {
     }
     
     // MARK: - PRIVATE
-    
-    // Get portfolio
-    private func getPortfolio() {
+        private func getPortfolio() {
         let request = NSFetchRequest<PortfolioEntity>(entityName: entityName)
         
         do {
