@@ -26,6 +26,22 @@ class PortfolioDataService {
         }
     }
     
+    // MARK: - PUBLIC
+    
+    // This is the only function we will call
+    // from somewhere else in app
+    func updatePortfolio(coin: CoinModel, amount: Double) {
+        // check if coin is alredy in portfolio
+        if let entity = savedEntities.first(where: { $0.coinID == coin.id }) {
+            if amount > 0 {
+                update(entity: entity, amount: amount)
+            } else {
+                delete(entity: entity)
+            }
+        } else {
+            add(coin: coin, amount: amount)
+        }
+    }
     
     
 }
