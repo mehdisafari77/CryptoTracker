@@ -2,7 +2,7 @@
 A Crypto Tracking App
 
 ## Summary
-This is a crypto tracking app using the CoinGecko to get data about coins, and users are able to add coins to their portfolio to keep track of them. Data is saved using CoreData and everything is coded in SwiftUI.
+This is a crypto tracking app using the CoinGecko to get data about coins, and users are able to add coins to their portfolio to keep track of them. Data is saved using CoreData and everything is coded in SwiftUI. (THE APP STILL HAS SIGNUP/SIGNIN YET TO BE IMPLEMENTED)
 
 ## Built With
 * [SwiftUI](https://developer.apple.com/tutorials/swiftui)
