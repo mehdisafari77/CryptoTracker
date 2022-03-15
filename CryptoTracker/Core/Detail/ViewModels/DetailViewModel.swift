@@ -53,5 +53,28 @@ class DetailViewModel: ObservableObject {
         return (overviewArray, additionalArray)
     }
     
+    private func createOverviewArray(coinModel: CoinModel) -> [StatisticModel] {
+        
+        let price                   = coinModel.currentPrice.asCurrencyWith6Decimals()
+        let pricePercentChange      = coinModel.priceChangePercentage24H
+        let priceStat               = StatisticModel(title: "Price Change", value: price, percentageChange: pricePercentChange)
+                
+        let marketCap               =  "$" + (coinModel.marketCap?.formattedWithAbbreviations() ?? "")
+        let marketCapPercentChange  = coinModel.marketCapChangePercentage24H
+        let marketStat              = StatisticModel(title: "Market Capitalization", value: marketCap, percentageChange: marketCapPercentChange)
+
+        let rank                    = "\(coinModel.rank)"
+        let rankStat                = StatisticModel(title: "Rank", value: rank)
+                
+        let volume                  = "$" + (coinModel.totalVolume?.formattedWithAbbreviations() ?? "")
+        let volumeStat              = StatisticModel(title: "Volume", value: volume)
+            
+        let overviewArray: [StatisticModel] = [
+            priceStat, marketStat, rankStat, volumeStat
+        ]
+        
+        return overviewArray
+    }
+    
     
 }
