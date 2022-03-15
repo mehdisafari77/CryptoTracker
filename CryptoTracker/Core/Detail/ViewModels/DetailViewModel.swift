@@ -76,5 +76,34 @@ class DetailViewModel: ObservableObject {
         return overviewArray
     }
     
-    
+    private func createAdditionalArray(coinDetailModel: CoinDetailModel?, coinModel: CoinModel) -> [StatisticModel] {
+        
+        let high                    = coinModel.high24H?.asCurrencyWith6Decimals() ?? "n/a"
+        let highStat                = StatisticModel(title: "24h High", value: high)
+                
+        let low                     = coinModel.low24H?.asCurrencyWith6Decimals() ?? "n/a"
+        let lowStat                 = StatisticModel(title: "24h Low", value: low)
+                
+        let priceChange             = coinModel.priceChange24H?.asCurrencyWith6Decimals() ?? "n/a"
+        let pricePercentChange      = coinModel.priceChangePercentage24H
+        let priceChangeStat         = StatisticModel(title: "24h Price Change", value: priceChange, percentageChange: pricePercentChange)
+
+        let marketCapChange         = "$" + (coinModel.marketCapChange24H?.asCurrencyWith6Decimals() ?? "")
+        let marketCapPercentChange  = coinModel.marketCapChangePercentage24H
+        let marketCapChangeStat     = StatisticModel(title: "24h Market Cap Change", value: marketCapChange, percentageChange: marketCapPercentChange)
+        
+        let blockTime               = coinDetailModel?.blockTimeInMinutes ?? 0
+        let blockTimeString         = blockTime == 0 ? "n/a" : "\(blockTime)"
+        let blockTimeStat           = StatisticModel(title: "Block Time", value: blockTimeString)
+        
+        let hashing                 = coinDetailModel?.hashingAlgorithm ?? "n/a"
+        let hashingStat             = StatisticModel(title: "Hashing Algorithm", value: hashing)
+        
+        let additionalArray: [StatisticModel] = [
+            highStat, lowStat, priceChangeStat, marketCapChangeStat, blockTimeStat, hashingStat
+        ]
+        
+        return additionalArray
+    }
 }
+
