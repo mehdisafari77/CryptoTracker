@@ -49,24 +49,6 @@ struct SettingsView_Previews: PreviewProvider {
 }
 extension SettingsView {
     
-//    private var swiftfulThinkingSection: some View {
-//        Section(header: Text("Swiftful Thinking")) {
-//            VStack(alignment: .leading) {
-//                Image("logo")
-//                    .resizable()
-//                    .frame(width: 100, height: 100)
-//                    .clipShape(RoundedRectangle(cornerRadius: 20))
-//                Text("This app made by following a @SwiftfulThinking course on YouTube. It uses MVVM Architecture, Combine and CoreData!")
-//                    .font(.callout)
-//                    .fontWeight(.medium)
-//                    .foregroundColor(Color.theme.accent)
-//            }
-//            .padding(.vertical)
-//            Link("Subscribe on YouTube 🥳", destination: youtubeURL)
-//            Link("Support for his coffee addiction ☕️", destination: coffeeURL)
-//        }
-//    }
-    
     private var coinGeckoSection: some View {
         Section(header: Text("Coin Gecko")) {
             VStack(alignment: .leading) {
