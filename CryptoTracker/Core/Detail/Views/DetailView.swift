@@ -20,6 +20,54 @@ struct DetailLoadingView: View {
     }
 }
 
+struct DetailView: View {
+    
+    @StateObject private var vm: DetailViewModel
+    
+    @State var showFullDescription: Bool = false
+    
+    private let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
+    private let spacing: CGFloat = 30
+    
+    init(coin: CoinModel) {
+        _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
+    }
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                ChartView(coin: vm.coin)
+                    .padding(.vertical)
+                VStack {
+                    overviewTitle
+                    Divider()
+                    descriptionSection
+                    overviewGrid
+                    additionalTitle
+                    Divider()
+                    additionalGrid
+                    websiteSection
+                }
+                .padding()
+            }
+        }
+        .background(
+            Color.theme.background
+                .ignoresSafeArea()
+        )
+        .navigationTitle(vm.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                navigationBarTrailingItems
+            }
+        }
+    }
+}
+
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailLoadingView()
@@ -52,6 +100,33 @@ extension DetailView {
             .bold()
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var descriptionSection: some View {
+        ZStack {
+            if let description = vm.coinDescription,
+               !description.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(description)
+                        .lineLimit(showFullDescription ? nil : 3)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                    
+                    Button(action: {
+                        withAnimation(.easeInOut) {
+                            showFullDescription.toggle()
+                        }
+                    }, label: {
+                        Text(showFullDescription ? "Less" : "Read more..")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding(.vertical, 4)
+                    })
+                    .accentColor(.blue)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
     }
     
 }
