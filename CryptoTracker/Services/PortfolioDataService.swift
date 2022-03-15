@@ -79,5 +79,12 @@ class PortfolioDataService {
         }
     }
     
+    private func applyChanges() {
+        if container.viewContext.hasChanges {
+            save()
+            getPortfolio()
+        }
+    }
+    
     
 }
