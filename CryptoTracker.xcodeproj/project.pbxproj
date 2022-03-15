@@ -248,7 +248,7 @@
 		B55F8D7A27E042E6002F4E32 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				B55F8D8027E04398002F4E32 /* SettingsView.swift */,
+				B55F8D8227E043BA002F4E32 /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -258,6 +258,14 @@
 			children = (
 				B55F8D7B27E0430D002F4E32 /* LaunchView.swift */,
 				B55F8D7D27E0433B002F4E32 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B55F8D8227E043BA002F4E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B55F8D8027E04398002F4E32 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
