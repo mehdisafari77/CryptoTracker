@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B55F8D3327DC73A9002F4E32 /* CryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D3227DC73A9002F4E32 /* CryptoTrackerApp.swift */; };
-		B55F8D3527DC73A9002F4E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D3427DC73A9002F4E32 /* ContentView.swift */; };
 		B55F8D3727DC73AA002F4E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F8D3627DC73AA002F4E32 /* Assets.xcassets */; };
 		B55F8D3A27DC73AA002F4E32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F8D3927DC73AA002F4E32 /* Preview Assets.xcassets */; };
 		B55F8D4227DDB067002F4E32 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D4127DDB067002F4E32 /* Color.swift */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		B55F8D2F27DC73A9002F4E32 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55F8D3227DC73A9002F4E32 /* CryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerApp.swift; sourceTree = "<group>"; };
-		B55F8D3427DC73A9002F4E32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B55F8D3627DC73AA002F4E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55F8D3927DC73AA002F4E32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B55F8D4127DDB067002F4E32 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				B55F8D8327E0440D002F4E32 /* Utilities */,
 				B55F8D5127E03A39002F4E32 /* Models */,
 				B55F8D4327DDB1E9002F4E32 /* Core */,
-				B55F8D3427DC73A9002F4E32 /* ContentView.swift */,
 				B55F8D3627DC73AA002F4E32 /* Assets.xcassets */,
 				B55F8D3827DC73AA002F4E32 /* Preview Content */,
 			);
@@ -398,7 +395,6 @@
 			files = (
 				B55F8D9027E04520002F4E32 /* UIApplication.swift in Sources */,
 				B55F8D8627E04460002F4E32 /* NetworkManager.swift in Sources */,
-				B55F8D3527DC73A9002F4E32 /* ContentView.swift in Sources */,
 				B55F8D5927E03B6E002F4E32 /* CoinRowView.swift in Sources */,
 				B55F8D5527E03AEC002F4E32 /* CoinDetailModel.swift in Sources */,
 				B55F8D6E27E041F0002F4E32 /* CoinImageView.swift in Sources */,
