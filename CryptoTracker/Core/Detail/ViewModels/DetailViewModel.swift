@@ -5,6 +5,9 @@
 //  Created by Mehdi MMS on 14/03/2022.
 //
 
+import Foundation
+import Combine
+
 class DetailViewModel: ObservableObject {
     
     @Published var overviewStatistics   : [StatisticModel]   = []
