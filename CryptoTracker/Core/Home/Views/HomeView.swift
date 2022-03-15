@@ -9,7 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var showPortfolio: Bool = false
+    @EnvironmentObject private var vm: HomeViewModel
+    @State private var showPortfolio: Bool = false // animate Right
+    @State private var showPortfolioView: Bool = false // new sheet
+    @State private var showSettingsView: Bool = false // new sheet
+    @State private var selectedCoin: CoinModel?
+    @State private var showDetailView: Bool = false
     
     var body: some View {
         ZStack {
