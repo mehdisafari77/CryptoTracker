@@ -70,7 +70,9 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailLoadingView()
+        NavigationView {
+            DetailView(coin: dev.coin)
+        }
     }
 }
 
@@ -171,5 +173,4 @@ extension DetailView {
         .frame(maxWidth: .infinity, alignment: .leading)
         .font(.headline)
     }
-    
 }
