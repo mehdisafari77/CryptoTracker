@@ -12,7 +12,7 @@ struct SettingsView: View {
     let defaultURL      = URL(string: "https://www.google.com")!
     let coingeckoURL    = URL(string: "https://www.coingecko.com")!
     let personalURL     = URL(string: "https://mehdisafari77.github.io/React-Portfolio/")!
-    let githubURL     = URL(string: "https://mehdisafari77.github.io/React-Portfolio/")!
+    let githubURL     = URL(string: "https://github.com/mehdisafari77")!
 
     var body: some View {
         NavigationView {
