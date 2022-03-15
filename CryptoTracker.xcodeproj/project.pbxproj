@@ -21,7 +21,7 @@
 		B55F8D5727E03B4A002F4E32 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D5627E03B4A002F4E32 /* HomeStatsView.swift */; };
 		B55F8D5927E03B6E002F4E32 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D5827E03B6E002F4E32 /* CoinRowView.swift */; };
 		B55F8D5B27E03BBF002F4E32 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D5A27E03BBF002F4E32 /* PortfolioView.swift */; };
-		B55F8D6027E03D98002F4E32 /* DetailLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D5F27E03D98002F4E32 /* DetailLoadingView.swift */; };
+		B55F8D6027E03D98002F4E32 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D5F27E03D98002F4E32 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		B55F8D5627E03B4A002F4E32 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		B55F8D5827E03B6E002F4E32 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		B55F8D5A27E03BBF002F4E32 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
-		B55F8D5F27E03D98002F4E32 /* DetailLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLoadingView.swift; sourceTree = "<group>"; };
+		B55F8D5F27E03D98002F4E32 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,7 @@
 		B55F8D5E27E03D7E002F4E32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B55F8D5F27E03D98002F4E32 /* DetailLoadingView.swift */,
+				B55F8D5F27E03D98002F4E32 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				B55F8D4C27DDB358002F4E32 /* CircleButtonView.swift in Sources */,
 				B55F8D4227DDB067002F4E32 /* Color.swift in Sources */,
 				B55F8D4E27DDB6BC002F4E32 /* CircleButtonAnimationView.swift in Sources */,
-				B55F8D6027E03D98002F4E32 /* DetailLoadingView.swift in Sources */,
+				B55F8D6027E03D98002F4E32 /* DetailView.swift in Sources */,
 				B55F8D5727E03B4A002F4E32 /* HomeStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
