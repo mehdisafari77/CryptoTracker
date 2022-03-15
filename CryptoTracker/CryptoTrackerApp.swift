@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CryptoTrackerApp: App {
     var body: some Scene {
-        // Navigation in main view
+        
         WindowGroup {
             NavigationView {
                 HomeView()
