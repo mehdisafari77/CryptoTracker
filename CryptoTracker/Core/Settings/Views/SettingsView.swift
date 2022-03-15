@@ -81,7 +81,7 @@ extension SettingsView {
                     .foregroundColor(Color.theme.accent)
             }
             .padding(.vertical)
-            Link("Visit Github Repo 🔥", destination: personalURL)
+            Link("Visit Github Repo 🔥", destination: githubURL)
             Link("Visit Website 🥳", destination: personalURL)
         }
     }
