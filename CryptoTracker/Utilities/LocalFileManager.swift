@@ -31,7 +31,7 @@ class LocalFileManager {
         // Create folder
         createFolderIfNeeded(folderName: folderName)
         
-        // Get path for image
+        // Get image path
         guard
             let data = image.pngData(),
             let url = getURLForImage(imageName: imageName, folderName: folderName)
