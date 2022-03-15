@@ -25,6 +25,25 @@ class DetailViewModel: ObservableObject {
     }
     
     
-    
+    private func addSubscribers() {
+        coinDetailDataService.$coinDetails
+            .combineLatest($coin)
+            .map(mapDataToStats)
+            .sink { [weak self] (returnedArrays) in
+                guard let self = self else { return }
+                self.overviewStatistics    = returnedArrays.overview
+                self.additionalStatistics  = returnedArrays.additional
+            }
+            .store(in: &cancellables)
+        
+        coinDetailDataService.$coinDetails
+            .sink { [weak self] (returnedCoinDetails) in
+                guard let self       = self else { return }
+                self.coinDescription = returnedCoinDetails?.readableDescription
+                self.websiteURL      = returnedCoinDetails?.links?.homepage?.first
+                self.redditURL       = returnedCoinDetails?.links?.subredditURL
+            }
+            .store(in: &cancellables)
+    }
     
 }
