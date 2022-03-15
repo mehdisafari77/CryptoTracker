@@ -66,5 +66,18 @@ class PortfolioDataService {
         applyChanges()
     }
     
+    private func delete(entity: PortfolioEntity) {
+        container.viewContext.delete(entity)
+        applyChanges()
+    }
+    
+    private func save() {
+        do {
+            try container.viewContext.save()
+        } catch let error {
+            print("Error save to core data container: \(error.localizedDescription)")
+        }
+    }
+    
     
 }
