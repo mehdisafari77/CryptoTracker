@@ -38,6 +38,8 @@
 		B55F8D8127E04398002F4E32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8027E04398002F4E32 /* SettingsView.swift */; };
 		B55F8D8627E04460002F4E32 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8527E04460002F4E32 /* NetworkManager.swift */; };
 		B55F8D8827E04480002F4E32 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8727E04480002F4E32 /* LocalFileManager.swift */; };
+		B55F8D8A27E044A7002F4E32 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8927E044A7002F4E32 /* HapticManager.swift */; };
+		B55F8D8C27E044CD002F4E32 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D8B27E044CD002F4E32 /* PreviewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		B55F8D8027E04398002F4E32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B55F8D8527E04460002F4E32 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B55F8D8727E04480002F4E32 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		B55F8D8927E044A7002F4E32 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		B55F8D8B27E044CD002F4E32 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				B55F8D4127DDB067002F4E32 /* Color.swift */,
+				B55F8D8B27E044CD002F4E32 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			children = (
 				B55F8D8527E04460002F4E32 /* NetworkManager.swift */,
 				B55F8D8727E04480002F4E32 /* LocalFileManager.swift */,
+				B55F8D8927E044A7002F4E32 /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				B55F8D5527E03AEC002F4E32 /* CoinDetailModel.swift in Sources */,
 				B55F8D6E27E041F0002F4E32 /* CoinImageView.swift in Sources */,
 				B55F8D6227E03F6E002F4E32 /* ChartView.swift in Sources */,
+				B55F8D8C27E044CD002F4E32 /* PreviewProvider.swift in Sources */,
 				B55F8D4827DDB21A002F4E32 /* HomeView.swift in Sources */,
 				B55F8D6827E0417E002F4E32 /* MarketDataModel.swift in Sources */,
 				B55F8D5027E039E8002F4E32 /* HomeViewModel.swift in Sources */,
@@ -387,6 +394,7 @@
 				B55F8D6027E03D98002F4E32 /* DetailView.swift in Sources */,
 				B55F8D7427E04248002F4E32 /* SearchBarView.swift in Sources */,
 				B55F8D6427E03F94002F4E32 /* DetailViewModel.swift in Sources */,
+				B55F8D8A27E044A7002F4E32 /* HapticManager.swift in Sources */,
 				B55F8D5727E03B4A002F4E32 /* HomeStatsView.swift in Sources */,
 				B55F8D7227E04227002F4E32 /* CoinLogoView.swift in Sources */,
 				B55F8D8127E04398002F4E32 /* SettingsView.swift in Sources */,
