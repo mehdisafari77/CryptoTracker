@@ -51,26 +51,38 @@ struct SwiftfulCryptoApp: App {
     }
 }
 
-/// Request AdMob Interstitial ads
-func loadInterstitial() {
-    let request = GADRequest()
-    GADInterstitialAd.load(withAdUnitID: AppConfig.adMobAdId, request: request, completionHandler: { [self] ad, error in
-        if ad != nil { interstitial = ad }
-        interstitial?.fullScreenContentDelegate = self
-    })
-}
-
-func showInterstitialAds() {
-    presentedCount += 1
-    if self.interstitial != nil, presentedCount % AppConfig.adMobFrequency == 0, !isPremiumUser {
-        var root = UIApplication.shared.windows.first?.rootViewController
-        if let presenter = root?.presentedViewController { root = presenter }
-        self.interstitial?.present(fromRootViewController: root!)
+class Interstitial: NSObject, GADFullScreenContentDelegate {
+    @AppStorage("isPremiumUser") var isPremiumUser: Bool = false
+    private var interstitial: GADInterstitialAd?
+    private var presentedCount: Int = 0
+    
+    /// Default initializer of interstitial class
+    override init() {
+        super.init()
+        if isPremiumUser == false {
+            loadInterstitial()
+        }
+    }
+    
+    /// Request AdMob Interstitial ads
+    func loadInterstitial() {
+        let request = GADRequest()
+        GADInterstitialAd.load(withAdUnitID: AppConfig.adMobAdId, request: request, completionHandler: { [self] ad, error in
+            if ad != nil { interstitial = ad }
+            interstitial?.fullScreenContentDelegate = self
+        })
+    }
+    
+    func showInterstitialAds() {
+        presentedCount += 1
+        if self.interstitial != nil, presentedCount % AppConfig.adMobFrequency == 0, !isPremiumUser {
+            var root = UIApplication.shared.windows.first?.rootViewController
+            if let presenter = root?.presentedViewController { root = presenter }
+            self.interstitial?.present(fromRootViewController: root!)
+        }
+    }
+    
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        loadInterstitial()
     }
 }
-
-func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-    loadInterstitial()
-}
-}
-

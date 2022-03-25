@@ -49,6 +49,7 @@
 		B55F8D9A27E04727002F4E32 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9927E04727002F4E32 /* CoinImageService.swift */; };
 		B55F8D9C27E04755002F4E32 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9B27E04755002F4E32 /* MarketDataService.swift */; };
 		B55F8D9E27E047A0002F4E32 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F8D9D27E047A0002F4E32 /* PortfolioDataService.swift */; };
+		B5A7132827EE58210008FA16 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7132727EE58210008FA16 /* AppConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		B55F8D9927E04727002F4E32 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		B55F8D9B27E04755002F4E32 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		B55F8D9D27E047A0002F4E32 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
+		B5A7132727EE58210008FA16 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		D269F016F245026D9BE8FC66 /* Pods-CryptoTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker.debug.xcconfig"; path = "Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +127,6 @@
 				D269F016F245026D9BE8FC66 /* Pods-CryptoTracker.debug.xcconfig */,
 				259426EB4106C72781E5C747 /* Pods-CryptoTracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +151,7 @@
 		B55F8D3127DC73A9002F4E32 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B5A7132727EE58210008FA16 /* AppConfig.swift */,
 				B55F8D3227DC73A9002F4E32 /* CryptoTrackerApp.swift */,
 				B55F8D8427E04438002F4E32 /* Services */,
 				B55F8D4027DDB05F002F4E32 /* Extensions */,
@@ -498,6 +500,7 @@
 				B55F8D8A27E044A7002F4E32 /* HapticManager.swift in Sources */,
 				B55F8D5727E03B4A002F4E32 /* HomeStatsView.swift in Sources */,
 				B55F8D7227E04227002F4E32 /* CoinLogoView.swift in Sources */,
+				B5A7132827EE58210008FA16 /* AppConfig.swift in Sources */,
 				B55F8D8127E04398002F4E32 /* SettingsView.swift in Sources */,
 				B55F8D8827E04480002F4E32 /* LocalFileManager.swift in Sources */,
 			);
