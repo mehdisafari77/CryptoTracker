@@ -11,6 +11,7 @@ import GoogleMobileAds
 @main
 struct SwiftfulCryptoApp: App {
     
+    @State private var didShowAds: Bool = false
     @StateObject private var vm = HomeViewModel()
     @State private var showLaunchView: Bool = true
 
@@ -30,6 +31,7 @@ struct SwiftfulCryptoApp: App {
     }
     
     var body: some Scene {
+        
         WindowGroup {
             ZStack {
                 NavigationView {
@@ -52,16 +54,14 @@ struct SwiftfulCryptoApp: App {
 }
 
 class Interstitial: NSObject, GADFullScreenContentDelegate {
-    @AppStorage("isPremiumUser") var isPremiumUser: Bool = false
     private var interstitial: GADInterstitialAd?
     private var presentedCount: Int = 0
     
     /// Default initializer of interstitial class
     override init() {
         super.init()
-        if isPremiumUser == false {
-            loadInterstitial()
-        }
+        
+        loadInterstitial()
     }
     
     /// Request AdMob Interstitial ads
@@ -75,7 +75,7 @@ class Interstitial: NSObject, GADFullScreenContentDelegate {
     
     func showInterstitialAds() {
         presentedCount += 1
-        if self.interstitial != nil, presentedCount % AppConfig.adMobFrequency == 0, !isPremiumUser {
+        if self.interstitial != nil, presentedCount % AppConfig.adMobFrequency == 0 {
             var root = UIApplication.shared.windows.first?.rootViewController
             if let presenter = root?.presentedViewController { root = presenter }
             self.interstitial?.present(fromRootViewController: root!)
