@@ -25,8 +25,8 @@ class AppConfig {
     static let privacyURL: URL = URL(string: "https://www.crypttracker.app/home")!
     
     // MARK: - In App Purchases
-    static let premiumVersion: String = "1988779873"
-    static let freePlanScansCount: Int = 2
+//    static let premiumVersion: String = "1988779873"
+//    static let freePlanScansCount: Int = 2
     
     /// Your email for support
     static let emailSupport = "info@crypttracker.app"
